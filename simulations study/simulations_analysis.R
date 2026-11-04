@@ -5,6 +5,14 @@
 # The HMM fitting and marginal MAP ARI calculations are unchanged.
 # ============================================================================
 
+# Set working directory to the simulation folder
+if (!file.exists("simu1.R")) {
+  if (file.exists("simulations study/simu1.R")) {
+    setwd("simulation_study")
+  } else {
+    stop("Cannot locate the simulation_study directory.")
+  }
+}
 # ----------------------------- SETTINGS -------------------------------------
 STUDIES <- c("SIM1", "SIM2")
 RESULT_ROOT <- "results"
