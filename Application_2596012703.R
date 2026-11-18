@@ -22,7 +22,7 @@ dataset <- "prepared"
 
 dt_grid <- c(10L, 5L, 1L)
 analysis_dt <- 1L
-K_grid <- 1:12
+K_grid <- 1:15
 models <- c("skellam", "pois2", "bivpois")
 
 workers <- 8L
