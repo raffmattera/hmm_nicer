@@ -335,7 +335,7 @@ container_GRS$settings <- list(
   workers = workers, max_iter = max_iter, tol = tol, seed = seed
 )
 
-# Save the complete fitted grid from this run, including all K=1:12 fits.
+# Save the complete fitted grid from this run, including all K=1:15 fits.
 # The file is a reproducible output, not a required input.
 dir.create("paper_outputs", recursive = TRUE, showWarnings = FALSE)
 saveRDS(container_GRS, file.path("paper_outputs", "GRS.rds"))
@@ -705,6 +705,9 @@ regime_GTI <- data.frame()
 regime_phases <- data.frame()
 phase_counts <- data.frame()
 flare_plot_data <- data.frame()
+max_K <- max(GRS$selected$K[GRS$selected$dt == 1L & GRS$selected$model %in% models])
+
+stopifnot(max_K == 14L)
 
 for (model in models) {
 
@@ -938,7 +941,7 @@ for (model in models) {
     model = model,
     seconds = lc$flare_seconds[ii],
     D = lc$D[ii],
-    state = factor(path[ii], levels = seq_len(12))
+    state = factor(path[ii], levels = seq_len(max_K))
   ))
 
   cat("\nREGIME OCCUPANCY BY GTI:", model, "K=", K, "\n")
@@ -1001,8 +1004,8 @@ flare_plot_data$model <- factor(
   )
 )
 
-state_colors <- grDevices::hcl.colors(12, palette = "Dark 3")
-names(state_colors) <- as.character(seq_len(12))
+state_colors <- grDevices::hcl.colors(max_K, palette = "Dark 3")
+names(state_colors) <- as.character(seq_len(max_K))
 
 p_three_flare <- ggplot(
   flare_plot_data,
@@ -1072,7 +1075,7 @@ p_bic <- ggplot(
     nrow = 1
   ) +
   scale_x_continuous(
-    breaks = 1:12
+    breaks = 1:15
   ) +
   labs(
     x = "Number of latent regimes",
@@ -1087,7 +1090,7 @@ p_bic <- ggplot(
 print(p_bic)
 
 ggsave(
-  file.path(main_dir, "GRS_BIC_three_emissions_K12.pdf"),
+  file.path(main_dir, "GRS_BIC_three_emissions_K15.pdf"),
   p_bic,
   width = 11.5,
   height = 4.2
