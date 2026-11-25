@@ -1,8 +1,3 @@
-# Original HMM mathematical functions, mechanically consolidated.
-# Source: the previous NICER_AOAS_repro project; function bodies are unchanged.
-# Per-file SHA-256 values are recorded in README.md.
-
-# ===== VERBATIM SOURCE: R/hmm_original/utils.R =====
 # Internal numerical utilities -------------------------------------------------
 
 logSumExp <- function(x) {
@@ -2974,8 +2969,8 @@ aoas_JS <- function(p, q) {
 # for the predictive NLL, which is invariant to permutations.
 # Exact dynamic-programming assignment, O(K^2 2^K), no external packages.
 aoas_match_labels <- function(z_gap, z_comp, K) {
-  if (length(z_gap) != length(z_comp) || K > 13L || K < 1L) {
-    stop("Invalid MAP sequences / K; matching supports K <= 13.")
+  if (length(z_gap) != length(z_comp) || K > 15L || K < 1L) {
+    stop("Invalid MAP sequences / K; matching supports K <= 15.")
   }
   ok <- is.finite(z_gap) & is.finite(z_comp) &
     z_gap %in% seq_len(K) & z_comp %in% seq_len(K)
