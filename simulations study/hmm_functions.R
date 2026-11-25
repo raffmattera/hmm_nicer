@@ -1,8 +1,4 @@
-# Original HMM mathematical functions, mechanically consolidated.
-# Source: the previous NICER_AOAS_repro project; function bodies are unchanged.
-# Per-file SHA-256 values are recorded in README.md.
 
-# ===== VERBATIM SOURCE: R/hmm_original/utils.R =====
 # Internal numerical utilities -------------------------------------------------
 
 logSumExp <- function(x) {
