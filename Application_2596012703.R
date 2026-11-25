@@ -1,16 +1,6 @@
 # =============================================================================
 # AOAS R1 | GRS 1915+105 | COMPLETE REAL-DATA ANALYSIS
 # =============================================================================
-# Workflow (in reading order):
-# 0. Settings, input observations and fitted models
-# 1. Original observing-grid reconstruction and fitted BIC selection
-# 2. Instrumental overview and scientific regime interpretation
-# 3. Gap-aware versus compressed and post-gap predictive NLL
-# 4. Neilsen et al. (2020): flare phases and GTI regime allocation
-# 5. Bayesian Blocks (uses optional precomputed JSON files)
-# 6. SCORPEON background diagnostics (original CSV file names)
-# 7. Original GRS observational figures used in the manuscript
-# =============================================================================
 
 # =============================================================================
 # 0. SCIENTIFIC SETTINGS AND PROJECT DIRECTORIES
