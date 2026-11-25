@@ -1,13 +1,3 @@
-# ============================================================================
-# AOAS R1 - Shared simulation functions
-#
-# Source this file after hmm_functions.R (the original HMM numerical routines).
-# No estimation routines, RNG seeds, transition matrices or source intensities
-# have been changed relative to the corresponding published R1 configurations.
-#
-# K = 2 and K = 3 define the two source configurations in this release.
-# Two emission DGPs are evaluated: both_vary and fixed_shape.
-# ============================================================================
 
 # ---- 1. Deterministic seeds -------------------------------------------------
 
