@@ -1,6 +1,4 @@
 # ============================================================================
-# AOAS R1 - Simulation 1: temporal fragmentation
-#
 # Run from the replication directory:
 #   Rscript simu1.R
 # or from an interactive R session:
