@@ -24,7 +24,6 @@ soft_band <- c(2, 5)
 hard_band <- c(5, 12)
 energy_tag <- "E2_5_E5_12"
 
-# Optional, precomputed Bayesian Blocks JSONs; skip this benchmark if absent.
 run_bayesian_blocks <- TRUE
 
 output_dir <- file.path("paper_outputs_v2", "analysis_R1")
