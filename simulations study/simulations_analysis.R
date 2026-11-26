@@ -1,8 +1,7 @@
 # ============================================================================
-# AOAS R1 | Run SIM1, run SIM2, then analyze their saved replication checkpoints.
+# Run SIM1, run SIM2, then analyze their saved replication checkpoints.
 # Run from this directory: source("simulations_analysis.R")
 # SIM1 and SIM2 launcher scripts SKIP completed rep_###.rds files.
-# The HMM fitting and marginal MAP ARI calculations are unchanged.
 # ============================================================================
 
 # Set working directory to the simulation folder
