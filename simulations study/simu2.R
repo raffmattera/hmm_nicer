@@ -1,5 +1,5 @@
 # ============================================================================
-# AOAS R1 - Simulation 2: emission structure and time-varying background
+# Simulation 2: emission structure and time-varying background
 #
 # Run from the replication directory:
 #   Rscript simu2.R
