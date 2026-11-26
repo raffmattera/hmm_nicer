@@ -1,4 +1,4 @@
-## **Gap-aware hidden Markov modelling of hard–soft count contrasts in fragmented X-ray time series**
+**Gap-aware hidden Markov modelling of hard–soft count contrasts in fragmented X-ray time series**
 
 Raffaele Mattera and Andrea Nigri
 
