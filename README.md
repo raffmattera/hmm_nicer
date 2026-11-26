@@ -10,4 +10,4 @@ This repository accompanies the manuscript "Gap-aware hidden Markov modelling of
 - Independent bivariate Poisson emissions;
 - Correlated bivariate Poisson emissions.
 
-The code provides both simulations and application to NICER data, precisely GRS~1915+105, an XRB in which a black hole accretes matter from a companion star, ObsID 2596012703.
+The code provides both simulations and application to NICER data, precisely GRS 1915+105, an XRB in which a black hole accretes matter from a companion star, ObsID 2596012703.
